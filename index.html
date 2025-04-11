@@ -4,126 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vikas Neugi | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --primary: #1f2937;
-      --accent: #2563eb;
-      --light: #f9f9f9;
-      --gray: #6b7280;
-    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: var(--light);
-      color: var(--primary);
+      background: #f9f9f9;
+      color: #111;
     }
     header {
-      background: var(--primary);
+      background: #1e293b;
       color: white;
-      padding: 3rem 1rem;
       text-align: center;
+      padding: 3rem 1rem;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
     header p {
-      margin: 0.5rem 0 0;
-      font-weight: 300;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
     }
     section {
       max-width: 900px;
       margin: 3rem auto;
-      padding: 0 1.5rem;
+      padding: 0 1rem;
     }
     h2 {
-      color: var(--primary);
-      border-left: 4px solid var(--accent);
-      padding-left: 0.6rem;
-      font-size: 1.5rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.5rem;
       margin-bottom: 1rem;
+      color: #1e293b;
     }
     ul {
       padding-left: 1.2rem;
     }
-    .skills li,
-    .experience p {
-      margin-bottom: 0.6rem;
-    }
-    .card {
+    .project {
+      border: 1px solid #e5e7eb;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
       background: white;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      padding: 1.2rem;
-      border-radius: 8px;
-      margin-bottom: 2rem;
     }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    .project h3 {
+      margin-top: 0;
     }
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: #e5e7eb;
+      background: #f1f5f9;
       font-size: 0.9rem;
+      color: #555;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Vikas Neugi</h1>
-    <p>Full Stack Web Developer | WordPress & PHP Specialist</p>
+    <p>Full Stack Web Developer • WordPress & PHP Specialist</p>
+    <a class="btn" href="https://vikasneugi.github.io/Vikas_Neugi_Resume.pdf" target="_blank">Download Resume</a>
   </header>
 
-  <section class="about card">
+  <section>
     <h2>About Me</h2>
     <p>
-      Full Stack Web Developer with 9+ years of experience building high-performance websites and custom web solutions.
-      I specialize in WordPress and PHP, and I'm always exploring new technologies to expand my skill set.
-      Currently exploring Vue.js, React.js, Django, and TypeScript.
+      Full Stack Developer with 9+ years of experience delivering fast, scalable, and custom WordPress-based solutions. 
+      Specializing in PHP development with a focus on clean code, security, and performance.
+      Currently exploring Vue.js, React.js, and Django.
     </p>
   </section>
 
-  <section class="skills card">
+  <section>
     <h2>Skills</h2>
     <ul>
       <li>PHP, JavaScript, HTML5, CSS3, Bootstrap, MySQL</li>
-      <li>WordPress (Custom Themes & Plugins), Joomla</li>
-      <li>Git, Bitbucket, SourceTree, cPanel, Plesk, RESTful APIs</li>
-      <li>Trello, Jira, Smartsheets</li>
+      <li>WordPress (Themes & Plugins), Joomla</li>
+      <li>Git, SourceTree, Bitbucket, cPanel, Plesk, RESTful APIs</li>
+      <li>Tools: Trello, Jira, Smartsheets</li>
     </ul>
   </section>
 
-  <section class="experience card">
-    <h2>Experience</h2>
-    <p><strong>Imagefile Creative Services</strong> — Full Stack Developer (Apr 2017 – Present)</p>
-    <p><strong>Kodework</strong> — Full Stack Developer (Mar 2016 – Mar 2017)</p>
-    <p><strong>Demerg Systems India Pvt. Ltd.</strong> — Software Programmer (Apr 2014 – Mar 2016)</p>
-    <p><strong>EP Kamat Group</strong> — EDP Officer (Aug 2012 – Feb 2014)</p>
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3><a href="https://blacktigergoa.com/" target="_blank">BlackTiger Goa</a></h3>
+      <p>WordPress website for an entertainment brand featuring performance schedules and media content.</p>
+    </div>
+
+    <div class="project">
+      <h3><a href="https://blacktigerexcavators.com/" target="_blank">BlackTiger Excavators</a></h3>
+      <p>Company site showcasing heavy machinery services, built with a focus on speed and mobile optimization.</p>
+    </div>
+
+    <div class="project">
+      <h3><a href="https://www.timecircles.co.uk/" target="_blank">Time Circles (UK)</a></h3>
+      <p>Website for a UK-based therapy brand. Created using WordPress with custom design integration.</p>
+    </div>
   </section>
 
-  <section class="resume card">
-    <h2>Resume</h2>
-    <p>
-      <a href="https://vikasneugi.github.io/Vikas_Neugi_Resume.pdf" download>
-        📄 Download my resume (PDF)
-      </a>
-    </p>
-  </section>
-
-  <section class="contact card">
+  <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:vikasneugi@gmail.com">vikasneugi@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/vikas-neugi-11695138" target="_blank">Vikas Neugi</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Vikas Neugi. Built with 💻 on GitHub Pages.
+    &copy; 2025 Vikas Neugi • Built with 💻 on GitHub Pages
   </footer>
 </body>
 </html>
