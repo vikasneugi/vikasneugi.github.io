@@ -6,48 +6,71 @@
   <title>Vikas Neugi | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #1f2937;
+      --accent: #2563eb;
+      --light: #f9f9f9;
+      --gray: #6b7280;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      background: var(--light);
+      color: var(--primary);
     }
     header {
-      background: #1f2937;
+      background: var(--primary);
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
     header h1 {
-      margin: 0 0 0.5rem;
+      margin: 0;
+      font-size: 2.5rem;
     }
     header p {
-      margin: 0;
+      margin: 0.5rem 0 0;
       font-weight: 300;
     }
     section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
     h2 {
-      color: #1f2937;
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.5rem;
+      color: var(--primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 0.6rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
-    .skills, .experience {
+    ul {
+      padding-left: 1.2rem;
+    }
+    .skills li,
+    .experience p {
+      margin-bottom: 0.6rem;
+    }
+    .card {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 1.2rem;
+      border-radius: 8px;
       margin-bottom: 2rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
-      padding: 2rem;
-      background: #f1f5f9;
+      padding: 2rem 1rem;
+      background: #e5e7eb;
       font-size: 0.9rem;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -57,15 +80,16 @@
     <p>Full Stack Web Developer | WordPress & PHP Specialist</p>
   </header>
 
-  <section>
+  <section class="about card">
     <h2>About Me</h2>
     <p>
       Full Stack Web Developer with 9+ years of experience building high-performance websites and custom web solutions.
-      I specialize in WordPress and PHP, and I'm always exploring new technologies to expand my skill set. 
+      I specialize in WordPress and PHP, and I'm always exploring new technologies to expand my skill set.
+      Currently exploring Vue.js, React.js, Django, and TypeScript.
     </p>
   </section>
 
-  <section class="skills">
+  <section class="skills card">
     <h2>Skills</h2>
     <ul>
       <li>PHP, JavaScript, HTML5, CSS3, Bootstrap, MySQL</li>
@@ -75,7 +99,7 @@
     </ul>
   </section>
 
-  <section class="experience">
+  <section class="experience card">
     <h2>Experience</h2>
     <p><strong>Imagefile Creative Services</strong> — Full Stack Developer (Apr 2017 – Present)</p>
     <p><strong>Kodework</strong> — Full Stack Developer (Mar 2016 – Mar 2017)</p>
@@ -83,12 +107,16 @@
     <p><strong>EP Kamat Group</strong> — EDP Officer (Aug 2012 – Feb 2014)</p>
   </section>
 
-  <section>
+  <section class="resume card">
     <h2>Resume</h2>
-    <p><a href="Vikas_Neugi_Resume.pdf" download>Download my resume (PDF)</a></p>
+    <p>
+      <a href="https://vikasneugi.github.io/Vikas_Neugi_Resume.pdf" download>
+        📄 Download my resume (PDF)
+      </a>
+    </p>
   </section>
 
-  <section>
+  <section class="contact card">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:vikasneugi@gmail.com">vikasneugi@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/vikas-neugi-11695138" target="_blank">Vikas Neugi</a></p>
